@@ -124,13 +124,24 @@ module.exports = React.createClass({
       )
     }
 
-    return(
-      <td className={col.className}
+    if (_.isObject(text)) {
+      return(
+        <td className={col.className}
+          key={[col.title, row.key].join('\xff')}
+          title={col.title}>
+        <span>{text}</span> {solo}
+        </td>
+      )
+    }
+    else {
+      return(
+        <td className={col.className}
           key={[col.title, row.key].join('\xff')}
           title={col.title}>
         <span dangerouslySetInnerHTML={{__html: text || ''}}></span> {solo}
-      </td>
-    )
+        </td>
+      )
+    }
   },
 
   renderPagination: function(pagination) {
