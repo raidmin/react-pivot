@@ -1,4 +1,4 @@
-var _ = { range: require('lodash/range'), isObject: require('lodash/range') }
+var _ = { range: require('lodash/range'), isObject: require('lodash/isObject') }
 var React = require('react')
 var partial = require('./partial')
 var getValue = require('./get-value')
