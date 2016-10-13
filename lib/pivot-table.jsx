@@ -109,7 +109,7 @@ module.exports = React.createClass({
     } else {
       var val = getValue(col, row)
       var text = val
-      if (col.template) text = col.template(val, row)
+      if (col.template) text = col.template(val, row, col)
     }
 
     if (dimensionExists) {
