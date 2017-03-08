@@ -257,10 +257,6 @@ module.exports = React.createClass({
         if (col.template && self.props.csvTemplateFormat) {
           val = col.template(val)
         }
-        
-        if (self.props.windowsEncode) {
-          val = windows1252.encode(val);
-        }
 
         return JSON.stringify(val)
       })
