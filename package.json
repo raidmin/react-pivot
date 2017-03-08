@@ -23,7 +23,7 @@
     "reactify": "^1.0.0",
     "wildemitter": "^1.0.1",
     "xtend": "^4.0.0",
-    "windows-1252": "^1.0.0",
+    "windows-1252": "^1.0.0"
   },
   "devDependencies": {
     "browserify": "^8.1.3",
