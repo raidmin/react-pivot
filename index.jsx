@@ -14,6 +14,8 @@ var PivotTable = require('./lib/pivot-table.jsx')
 var Dimensions = require('./lib/dimensions.jsx')
 var ColumnControl = require('./lib/column-control.jsx')
 
+var windows1252 = require('windows-1252');
+
 module.exports = React.createClass({
   displayName: 'ReactPivot',
   getDefaultProps: function() {
@@ -254,6 +256,10 @@ module.exports = React.createClass({
 
         if (col.template && self.props.csvTemplateFormat) {
           val = col.template(val)
+        }
+        
+        if (self.props.windowsEncode) {
+          val = windows1252.encode(val);
         }
 
         return JSON.stringify(val)
