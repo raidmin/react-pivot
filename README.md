@@ -30,10 +30,10 @@ React.render(
 
 <strong> Classic (no React or Browserify): </strong>
 
-Download [react-pivot-standalone-1.18.1.min.js](https://raw.githubusercontent.com/davidguttman/react-pivot/master/dist/react-pivot-standalone-1.18.1.min.js)
+Download [react-pivot-standalone-3.0.0.min.js](https://raw.githubusercontent.com/davidguttman/react-pivot/master/dist/react-pivot-standalone-3.0.0.min.js)
 
 ```html
-<script src='react-pivot-standalone-1.18.1.min.js'></script>
+<script src='react-pivot-standalone-3.0.0.min.js'></script>
 <script>
   ReactPivot(document.body, {
     rows: rows,
@@ -144,6 +144,7 @@ solo | object | item that should be displayed solo | null
 sortBy | string | name of column to use for record sort | null
 sortDir | string | sort direction, either 'asc' or 'desc' | 'asc'
 tableClassName | string | assign css class to table containing react-pivot elements | ''
+hideDimensionFilter | boolean | do not render the dimension filter | false
 
 ### TODO ###
 
