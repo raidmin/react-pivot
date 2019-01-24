@@ -68,7 +68,7 @@ module.exports = createReactClass({
               <th className={className}
                   onClick={partial(self.props.onSort, col.title)}
                   style={{cursor: 'pointer'}}
-                  key={col.title}>
+                  key={col.value}>
 
                 {hide}
                 {col.title}
